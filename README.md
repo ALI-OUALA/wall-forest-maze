@@ -2,8 +2,6 @@
 
 *A maze generator that grows walls instead of carving a solution path.*
 
-![Wall Forest Maze visual identity](assets/wall-forest-maze.svg)
-
 Wall Forest Maze starts with an empty grid. It grows several independent wall trees through that open space, and the walkable maze is the space left between them.
 
 The generator does not build a route from `S` to `E`. Search is a separate step that runs after generation.
@@ -53,7 +51,7 @@ The result is a wall forest: independently seeded wall components with branches,
 
 The UI uses a dark navy surface, restrained teal/cyan accents, thin connected wall strokes, boxed `S`/`E` terminals, and continuous empty floor space. Explored search cells are white, the current cell is orange, and the final search path is red.
 
-The reusable project mark is [assets/wall-forest-maze.svg](assets/wall-forest-maze.svg). It is an original vector asset with an accessible title and description; the reference image is used only as visual direction and is not copied into the repository.
+The reference image is used only as visual direction; no copied reference artwork is included in the repository.
 
 ## Project structure
 
@@ -62,7 +60,6 @@ src/main.rs   generator, runtime UI, rendering, animation, tests
 src/bfs.rs    breadth-first search
 src/dfs.rs    depth-first search
 src/a_star.rs A* search
-assets/       reusable visual assets
 ```
 
 ## Complexity note
